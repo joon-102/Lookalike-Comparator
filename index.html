@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>딺은꼴 비교기</title>
+</head>
+
+<body>
+    <h1>닮은꼴 비교기</h1>
+
+    <!-- 아이템 등록 & submit -->
+    <input type="file" id="image1" accept="image/*">
+    <br>
+    <input style="margin-top: 5px;" type="file" id="image2" accept="image/*">
+    <br>
+    <button style="margin-top: 10px; margin-left: auto; margin-right: auto;" id="compareButton">제출</button>
+    <br>
+    <div id="result" style="margin-top: 20px; font-size: 1.2em;"></div>
+    <br>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+
+    <!-- 아이템 비교 -->
+    <canvas id="diffCanvas" style="display: none;"></canvas>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
